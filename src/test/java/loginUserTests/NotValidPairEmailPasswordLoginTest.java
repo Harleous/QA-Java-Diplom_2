@@ -17,7 +17,7 @@ public class NotValidPairEmailPasswordLoginTest {
     @Test
     @DisplayName("Cоздание покупателя и авторизация с неверным паролем")
     @Description("Нормальное создание покупателя, но авторизация с другим паролем")
-    public void useerShouldNotBeAuthorizedTest(){
+    public void UserShouldNotBeAuthorizedTest(){
 
 
 

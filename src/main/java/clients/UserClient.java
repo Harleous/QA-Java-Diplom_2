@@ -7,8 +7,7 @@ import pojoClasses.LoginUser;
 import pojoClasses.NoEmailUserLogin;
 import pojoClasses.NotValidPairEmailPassword;
 
-import static clients.BaseClient.getSpec;
-import static clients.BaseClient.getSpecAuth;
+import static clients.BaseClient.*;
 import static io.restassured.RestAssured.given;
 
 public class UserClient {
@@ -18,6 +17,14 @@ public class UserClient {
                 .body(loginUser)
                 .when()
                 .post("/api/auth/login")
+                .then();
+
+    }
+    public static ValidatableResponse logOutUser(String refreshToken) {
+        return   given()
+                .spec(getSpecRefresh(refreshToken))
+                .when()
+                .post("/api/auth/logout")
                 .then();
 
     }
@@ -49,7 +56,16 @@ public class UserClient {
                 .then();
     }
 
+    public static ValidatableResponse changeUserData(String accessToken, CreateUser createUser) {
 
+        return given()
+                .spec(getSpecAuth(accessToken))
+                .contentType(ContentType.JSON)
+                .body(createUser)
+                .when()
+                .patch("/api/auth/user")
+                .then();
+    }
     public ValidatableResponse create(CreateUser createUser) {
 
         return given()

@@ -16,7 +16,7 @@ public class CreateUserNoEmailTest {
     @Test
     @DisplayName("Неправильное создание покупателя")
     @Description("Cоздание покупателя без поля Email")
-    public void userShouldNotBeCreatedTest(){
+    public void UserWithNoEmailShouldNotBeCreatedTest(){
 
 
 

@@ -1,4 +1,4 @@
-package loginUserTests;
+package changeUserDataTests;
 
 import clients.UserClient;
 import dataProviders.NormalUserData;
@@ -10,14 +10,16 @@ import org.junit.Test;
 import pojoClasses.CreateUser;
 import pojoClasses.LoginUser;
 
-public class NormalLoginTest {
+public class ChangeUserDataWithNOAuthorizationTest {
     private String accessToken;
-    private UserClient userClient = new UserClient();
-    @Test
-    @DisplayName("Cоздание покупателя")
-    @Description("Нормальное создание покупателя с заполнением всех полей")
-    public void userShouldBeCreatedTest(){
+    private String refreshToken;
 
+    private UserClient userClient = new UserClient();
+
+    @Test
+    @DisplayName("Изменение данных неавторизованного покупателя")
+    @Description("Изменение данных покупателя без авторизации")
+    public void notAuthorizedUserDataShouldBeChangedTest() {
 
 
         CreateUser createUser = NormalUserData.randomUserData();
@@ -28,21 +30,31 @@ public class NormalLoginTest {
 
         //Логин
         LoginUser loginUser = LoginUser.fromCreateUserData(createUser);
-        accessToken = UserClient.loginUser(loginUser)
+        refreshToken = UserClient.loginUser(loginUser)
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true))
                 .extract().jsonPath()
-                .get("accessToken");
+                .get("refreshToken");
+
+        userClient.logOutUser(refreshToken)
+                .log().all()
+                .statusCode(200)
+                .body("message",Matchers.equalTo( "Successful logout"));
+
+
+
+
+
+
 
 
 
     }
-    //Удаление
-    @After
-    public void tearDown() {
-        if (accessToken != null) {
-            userClient.delete(accessToken).log().all().statusCode(202);
-        }
+        @After
+        public void tearDown() {
+            if (accessToken != null) {
+                userClient.delete(accessToken).log().all().statusCode(202);
+            }
     }
 }

@@ -16,7 +16,7 @@ public class CreateNormalUserTest {
     @Test
     @DisplayName("Cоздание покупателя")
     @Description("Нормальное создание покупателя с заполнением всех полей")
-    public void useerShouldBeCreatedTest(){
+    public void userShouldBeCreatedTest(){
 
 
 
