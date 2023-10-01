@@ -3,12 +3,13 @@ package clients;
 
 
 
-import static changeUserDataTests.ChangeUserDataWithNOAuthorizationTest;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
+import pojoClasses.LogOutUser;
+
 public class BaseClient {
 
 
@@ -31,14 +32,15 @@ public class BaseClient {
     }
     protected static RequestSpecification getSpecRefresh (String refreshToken)
     {
-
-        JSONObject requestBody = new JSONObject()
-                .put("token", refreshToken);
+        LogOutUser logOutUser = new LogOutUser(refreshToken
+        );
+        /*JSONObject requestBody = new JSONObject()
+                .put("token", refreshToken);*/
         return new RequestSpecBuilder()
                 .log(LogDetail.ALL)
-                .addHeader("Authorization", refreshToken)
+
                 .setContentType(ContentType.JSON)
-                .setBody(requestBody)
+                .setBody(logOutUser)
                 .setBaseUri("https://stellarburgers.nomoreparties.site")
                 .build();
     }

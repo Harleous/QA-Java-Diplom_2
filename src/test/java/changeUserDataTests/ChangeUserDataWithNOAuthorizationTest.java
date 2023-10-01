@@ -44,8 +44,9 @@ public class ChangeUserDataWithNOAuthorizationTest {
 
 
 
-
-        UserClient.logOutUser(refreshToken)
+LogOutUser logOutUser = new LogOutUser(refreshToken
+        );
+        UserClient.logOutUser(logOutUser.getRefreshToken())
                 .log().all()
                 .statusCode(200)
                 .body("message",Matchers.equalTo( "Successful logout"));

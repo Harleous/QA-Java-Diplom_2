@@ -1,38 +1,22 @@
 package pojoClasses;
 
 public class LogOutUser {
-        private String email;
-        private String password;
 
-        public LogOutUser(String email, String password) {
-            this.email = email;
-            this.password = password;
+
+    private String refreshToken;
+
+public LogOutUser(){}
+        public LogOutUser(String refreshToken) {
+            this.refreshToken =  refreshToken;
+
                    }
+    public String getRefreshToken() {
+        return refreshToken;
+    }
 
+    public void setRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
+    }
 
-
-        public String getEmail() {
-            return email;
-        }
-
-        public void setEmail(String email) {
-            this.email = email;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-
-
-
-        public static LogOutUser fromLoginUserData (LoginUser loginUser){
-
-            return new LogOutUser(loginUser.getEmail(), loginUser.getPassword());
-        }
     }
 
