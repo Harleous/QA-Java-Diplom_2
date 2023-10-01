@@ -6,6 +6,7 @@ public class CreateUser {
     public String password;
 
 
+
     public String getName() {
         return name;
     }

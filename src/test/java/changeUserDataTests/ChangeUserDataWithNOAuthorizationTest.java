@@ -1,20 +1,24 @@
 package changeUserDataTests;
 
+import clients.BaseClient;
 import clients.UserClient;
 import dataProviders.NormalUserData;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.hamcrest.Matchers;
+import org.json.JSONObject;
 import org.junit.After;
 import org.junit.Test;
 import pojoClasses.CreateUser;
+import pojoClasses.LogOutUser;
 import pojoClasses.LoginUser;
 
 public class ChangeUserDataWithNOAuthorizationTest {
     private String accessToken;
-    private String refreshToken;
+    public static String refreshToken;
 
-    private UserClient userClient = new UserClient();
+
+
 
     @Test
     @DisplayName("Изменение данных неавторизованного покупателя")
@@ -23,7 +27,7 @@ public class ChangeUserDataWithNOAuthorizationTest {
 
 
         CreateUser createUser = NormalUserData.randomUserData();
-        userClient.create(createUser)
+        UserClient.create(createUser)
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true));
@@ -37,11 +41,14 @@ public class ChangeUserDataWithNOAuthorizationTest {
                 .extract().jsonPath()
                 .get("refreshToken");
 
-        userClient.logOutUser(refreshToken)
+
+
+
+
+        UserClient.logOutUser(refreshToken)
                 .log().all()
                 .statusCode(200)
                 .body("message",Matchers.equalTo( "Successful logout"));
-
 
 
 
@@ -54,7 +61,7 @@ public class ChangeUserDataWithNOAuthorizationTest {
         @After
         public void tearDown() {
             if (accessToken != null) {
-                userClient.delete(accessToken).log().all().statusCode(202);
+                UserClient.delete(accessToken).log().all().statusCode(202);
             }
     }
 }

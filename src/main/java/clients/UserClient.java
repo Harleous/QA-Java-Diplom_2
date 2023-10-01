@@ -21,6 +21,7 @@ public class UserClient {
 
     }
     public static ValidatableResponse logOutUser(String refreshToken) {
+
         return   given()
                 .spec(getSpecRefresh(refreshToken))
                 .when()
@@ -66,7 +67,7 @@ public class UserClient {
                 .patch("/api/auth/user")
                 .then();
     }
-    public ValidatableResponse create(CreateUser createUser) {
+    public static ValidatableResponse create(CreateUser createUser) {
 
         return given()
                 .spec(getSpec())
