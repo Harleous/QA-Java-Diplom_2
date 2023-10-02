@@ -15,7 +15,7 @@ import pojoClasses.LoginUser;
 
 public class ChangeUserDataWithNOAuthorizationTest {
     private String accessToken;
-    public static String refreshToken;
+    public static String token;
 
 
 
@@ -34,24 +34,29 @@ public class ChangeUserDataWithNOAuthorizationTest {
 
         //Логин
         LoginUser loginUser = LoginUser.fromCreateUserData(createUser);
-        refreshToken = UserClient.loginUser(loginUser)
+        token = UserClient.loginUser(loginUser)
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true))
                 .extract().jsonPath()
                 .get("refreshToken");
+System.out.println(token);
 
 
 
-
-LogOutUser logOutUser = new LogOutUser(refreshToken
-        );
-        UserClient.logOutUser(logOutUser.getRefreshToken())
+LogOutUser logOutUser = new LogOutUser(token);
+        UserClient.logOutUser(logOutUser.getToken())
                 .log().all()
                 .statusCode(200)
                 .body("message",Matchers.equalTo( "Successful logout"));
 
+        CreateUser createUser1 = NormalUserData.randomUserData();
 
+        UserClient.changeUserDataWithNoAuth(createUser1)
+                .log().all()
+                .statusCode(401)
+                .body("success", Matchers.equalTo(false))
+                .body("message", Matchers.equalTo("You should be authorised"));
 
 
 

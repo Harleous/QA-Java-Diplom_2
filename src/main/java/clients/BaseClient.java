@@ -30,9 +30,9 @@ public class BaseClient {
                 .setBaseUri("https://stellarburgers.nomoreparties.site")
                 .build();
     }
-    protected static RequestSpecification getSpecRefresh (String refreshToken)
+    protected static RequestSpecification getSpecRefresh (String token)
     {
-        LogOutUser logOutUser = new LogOutUser(refreshToken
+        LogOutUser logOutUser = new LogOutUser(token
         );
         /*JSONObject requestBody = new JSONObject()
                 .put("token", refreshToken);*/

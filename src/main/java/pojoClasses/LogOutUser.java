@@ -3,19 +3,19 @@ package pojoClasses;
 public class LogOutUser {
 
 
-    private String refreshToken;
+    private String token;
 
 public LogOutUser(){}
-        public LogOutUser(String refreshToken) {
-            this.refreshToken =  refreshToken;
+        public LogOutUser(String token) {
+            this.token =  token;
 
                    }
-    public String getRefreshToken() {
-        return refreshToken;
+    public String getToken() {
+        return token;
     }
 
-    public void setRefreshToken(String refreshToken) {
-        this.refreshToken = refreshToken;
+    public void setToken(String token) {
+        this.token = token;
     }
 
     }

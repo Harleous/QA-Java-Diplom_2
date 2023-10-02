@@ -20,10 +20,10 @@ public class UserClient {
                 .then();
 
     }
-    public static ValidatableResponse logOutUser(String refreshToken) {
+    public static ValidatableResponse logOutUser(String token) {
 
         return   given()
-                .spec(getSpecRefresh(refreshToken))
+                .spec(getSpecRefresh(token))
                 .when()
                 .post("/api/auth/logout")
                 .then();
@@ -57,12 +57,22 @@ public class UserClient {
                 .then();
     }
 
-    public static ValidatableResponse changeUserData(String accessToken, CreateUser createUser) {
+    public static ValidatableResponse changeUserData(String accessToken, CreateUser createUser1) {
 
         return given()
                 .spec(getSpecAuth(accessToken))
                 .contentType(ContentType.JSON)
-                .body(createUser)
+                .body(createUser1)
+                .when()
+                .patch("/api/auth/user")
+                .then();
+    }
+    public static ValidatableResponse changeUserDataWithNoAuth(CreateUser createUser1) {
+
+        return given()
+                .spec(getSpec())
+                .contentType(ContentType.JSON)
+                .body(createUser1)
                 .when()
                 .patch("/api/auth/user")
                 .then();
@@ -78,4 +88,23 @@ public class UserClient {
                 .then();
 
     }
+    public static ValidatableResponse getIngredients (String accessToken)  {
+
+       return given()
+                .spec(getSpecAuth(accessToken))
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/ingredients")
+                .then();
+    }
+    public static ValidatableResponse createOrder (String ingredients)  {
+
+        return given()
+                .contentType(ContentType.JSON)
+                .body(ingredients)
+                .when()
+                .post("/api/orders")
+                .then();
+    }
+
 }
