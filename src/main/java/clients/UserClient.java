@@ -2,12 +2,8 @@ package clients;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
-import pojoClasses.CreateUser;
-import pojoClasses.LoginUser;
-import pojoClasses.NoEmailUserLogin;
-import pojoClasses.NotValidPairEmailPassword;
+import pojoClasses.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static clients.BaseClient.*;
@@ -100,11 +96,13 @@ public class UserClient {
                 .get("/api/ingredients")
                 .then();
     }
-    public static ValidatableResponse createOrder (ArrayList<String> ingredients)  {
-
+    public static ValidatableResponse createOrder (List<String> ingredients)  {
+        Ingredients ingredients1 = new Ingredients(ingredients );
         return given()
+                .spec(getSpec())
                 .contentType(ContentType.JSON)
-                .body(ingredients)
+                .log().all()
+                .body(ingredients1)
                 .when()
                 .post("/api/orders")
                 .then();

@@ -8,7 +8,11 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
+
+
 import pojoClasses.LogOutUser;
+
+import java.util.List;
 
 public class BaseClient {
 
@@ -34,14 +38,14 @@ public class BaseClient {
     {
         LogOutUser logOutUser = new LogOutUser(token
         );
-        /*JSONObject requestBody = new JSONObject()
-                .put("token", refreshToken);*/
+
+
         return new RequestSpecBuilder()
                 .log(LogDetail.ALL)
-
                 .setContentType(ContentType.JSON)
                 .setBody(logOutUser)
                 .setBaseUri("https://stellarburgers.nomoreparties.site")
                 .build();
     }
+
 }
