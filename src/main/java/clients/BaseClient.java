@@ -34,18 +34,5 @@ public class BaseClient {
                 .setBaseUri("https://stellarburgers.nomoreparties.site")
                 .build();
     }
-    protected static RequestSpecification getSpecRefresh (String token)
-    {
-        LogOutUser logOutUser = new LogOutUser(token
-        );
-
-
-        return new RequestSpecBuilder()
-                .log(LogDetail.ALL)
-                .setContentType(ContentType.JSON)
-                .setBody(logOutUser)
-                .setBaseUri("https://stellarburgers.nomoreparties.site")
-                .build();
-    }
 
 }

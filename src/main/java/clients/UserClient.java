@@ -20,9 +20,11 @@ public class UserClient {
 
     }
     public static ValidatableResponse logOutUser(String token) {
-
+        LogOutUser logOutUser = new LogOutUser(token
+        );
         return   given()
-                .spec(getSpecRefresh(token))
+                .spec(getSpec())
+                .body(logOutUser)
                 .when()
                 .post("/api/auth/logout")
                 .then();
@@ -87,10 +89,10 @@ public class UserClient {
                 .then();
 
     }
-    public static ValidatableResponse getIngredients (String accessToken)  {
+    public static ValidatableResponse getIngredients ()  {
 
        return given()
-                .spec(getSpecAuth(accessToken))
+                .spec(getSpec())
                 .contentType(ContentType.JSON)
                 .when()
                 .get("/api/ingredients")

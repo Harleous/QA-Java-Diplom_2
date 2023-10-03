@@ -1,43 +1,22 @@
 package createOrderTests;
 
-
-
 import clients.UserClient;
-import dataProviders.NormalUserData;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.hamcrest.Matchers;
 import org.junit.Test;
-import pojoClasses.CreateUser;
 import pojoClasses.Ingredients;
-import pojoClasses.LoginUser;
 import java.util.List;
 import java.util.Random;
 
-public class AuthorizedUserCreateOrderTest {
-
-
-
-
+public class NotAuthorizedUserCreateOrderTest {
+    private String accessToken;
     @Test
     @DisplayName("Cоздание заказа")
-    @Description("Создание заказа авторизованным пользователем")
+    @Description("Создание заказа НЕавторизованным пользователем")
     public void orderShouldBeCreated() {
-        CreateUser createUser = NormalUserData.randomUserData();
-        UserClient.create(createUser)
-                .log().all()
-                .statusCode(200)
-                .body("success", Matchers.equalTo(true));
 
-        //Логин
-        LoginUser loginUser = LoginUser.fromCreateUserData(createUser);
-       UserClient.loginUser(loginUser)
-                .log().all()
-                .statusCode(200)
-                .body("success", Matchers.equalTo(true));
-
-
-        List<String> ids =  UserClient.getIngredients().extract().jsonPath().getList("data._id");
+        List<String> ids = UserClient.getIngredients().extract().jsonPath().getList("data._id");
 
         int randomIngredientId1 = new Random().nextInt(ids.size());
         int randomIngredientId2 = new Random().nextInt(ids.size());
@@ -49,9 +28,5 @@ public class AuthorizedUserCreateOrderTest {
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true));
-
-
-
-
     }
 }
