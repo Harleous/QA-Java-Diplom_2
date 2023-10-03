@@ -1,5 +1,7 @@
 package createOrderTests;
 
+
+
 import clients.UserClient;
 import dataProviders.NormalUserData;
 import io.qameta.allure.Description;
@@ -8,15 +10,17 @@ import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 import pojoClasses.CreateUser;
+import pojoClasses.IngredientsSelect;
 import pojoClasses.LoginUser;
 
-import java.io.IOException;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class AuthorizedUserCreateOrderTest {
     private String accessToken;
-    private UserClient userClient = new UserClient();
-private String ingredients;
+
+
 
     @Test
     @DisplayName("Cоздание заказа")
@@ -36,16 +40,25 @@ private String ingredients;
                 .body("success", Matchers.equalTo(true))
                 .extract().jsonPath().get("accessToken");
 
-        ingredients =  UserClient.getIngredients(accessToken)
-                .log().all()
-                .statusCode(200)
-                .extract().path("data._id[3]" );
+
+        List<String> ids =  UserClient.getIngredients(accessToken).extract().jsonPath().getList("data._id");
+System.out.println(ids);
+
+        //int randomIngredientId = new Random().nextInt(ids.size());
+        String ingredient1 = ids.get(new Random().nextInt(ids.size()));
+        String ingredient2 = ids.get(new Random().nextInt(ids.size()));
+
+        ArrayList<String> ingredients = new ArrayList<>();
+        ingredients.add(ingredient1);
+        ingredients.add(ingredient2);
 
 
-UserClient.createOrder( ingredients)
+        IngredientsSelect ingredientsSelect = new IngredientsSelect(ingredients);
+UserClient.createOrder(ingredientsSelect.getIngredientsSelect() )
         .log().all()
         .statusCode(200)
         .body("success", Matchers.equalTo(true));
+
 
 
     }

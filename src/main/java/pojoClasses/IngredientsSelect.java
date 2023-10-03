@@ -1,17 +1,20 @@
 package pojoClasses;
 
+import java.util.ArrayList;
+
 public class IngredientsSelect {
-    public IngredientsSelect(Object[] ingredients) {
+    public IngredientsSelect(ArrayList<String> ingredients) {
         this.ingredients = ingredients;
     }
 
-    public Object[] getIngredients() {
+    public ArrayList<String> getIngredientsSelect() {
         return ingredients;
     }
 
-    public void setIngredients(Object[] ingredients) {
+    public void setIngredientsSelect(ArrayList<String> ingredients) {
         this.ingredients = ingredients;
     }
 
-    Object[] ingredients;
+    ArrayList<String> ingredients;
+
 }

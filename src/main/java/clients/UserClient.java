@@ -7,6 +7,9 @@ import pojoClasses.LoginUser;
 import pojoClasses.NoEmailUserLogin;
 import pojoClasses.NotValidPairEmailPassword;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static clients.BaseClient.*;
 import static io.restassured.RestAssured.given;
 
@@ -97,7 +100,7 @@ public class UserClient {
                 .get("/api/ingredients")
                 .then();
     }
-    public static ValidatableResponse createOrder (String ingredients)  {
+    public static ValidatableResponse createOrder (ArrayList<String> ingredients)  {
 
         return given()
                 .contentType(ContentType.JSON)
