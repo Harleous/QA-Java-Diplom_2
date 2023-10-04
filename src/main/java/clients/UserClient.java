@@ -4,6 +4,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import pojoClasses.*;
 
+import java.lang.System.Logger;
 import java.util.List;
 
 import static clients.BaseClient.*;
@@ -11,7 +12,7 @@ import static io.restassured.RestAssured.given;
 
 public class UserClient {
     public static ValidatableResponse loginUser(LoginUser loginUser) {
-        return   given()
+        return given()
                 .spec(getSpec())
                 .body(loginUser)
                 .when()
@@ -19,10 +20,11 @@ public class UserClient {
                 .then();
 
     }
+
     public static ValidatableResponse logOutUser(String token) {
         LogOutUser logOutUser = new LogOutUser(token
         );
-        return   given()
+        return given()
                 .spec(getSpec())
                 .body(logOutUser)
                 .when()
@@ -30,8 +32,9 @@ public class UserClient {
                 .then();
 
     }
-    public static ValidatableResponse loginNoEmail (NoEmailUserLogin noEmailUserLogin) {
-        return   given()
+
+    public static ValidatableResponse loginNoEmail(NoEmailUserLogin noEmailUserLogin) {
+        return given()
                 .spec(getSpec())
                 .body(noEmailUserLogin)
                 .when()
@@ -40,8 +43,8 @@ public class UserClient {
 
     }
 
-    public static ValidatableResponse loginNotValidPairEmailPassword (NotValidPairEmailPassword notValidPairEmailPassword) {
-        return   given()
+    public static ValidatableResponse loginNotValidPairEmailPassword(NotValidPairEmailPassword notValidPairEmailPassword) {
+        return given()
                 .spec(getSpec())
                 .body(notValidPairEmailPassword)
                 .when()
@@ -49,6 +52,7 @@ public class UserClient {
                 .then();
 
     }
+
     public static ValidatableResponse delete(String accessToken) {
         return given()
                 .spec(getSpecAuth(accessToken))
@@ -68,6 +72,7 @@ public class UserClient {
                 .patch("/api/auth/user")
                 .then();
     }
+
     public static ValidatableResponse changeUserDataWithNoAuth(CreateUser createUser1) {
 
         return given()
@@ -78,6 +83,7 @@ public class UserClient {
                 .patch("/api/auth/user")
                 .then();
     }
+
     public static ValidatableResponse create(CreateUser createUser) {
 
         return given()
@@ -89,17 +95,19 @@ public class UserClient {
                 .then();
 
     }
-    public static ValidatableResponse getIngredients ()  {
 
-       return given()
+    public static ValidatableResponse getIngredients() {
+
+        return given()
                 .spec(getSpec())
                 .contentType(ContentType.JSON)
                 .when()
                 .get("/api/ingredients")
                 .then();
     }
-    public static ValidatableResponse createOrder (List<String> ingredients)  {
-        Ingredients ingredients1 = new Ingredients(ingredients );
+
+    public static ValidatableResponse createOrder(List<String> ingredients) {
+        Ingredients ingredients1 = new Ingredients(ingredients);
         return given()
                 .spec(getSpec())
                 .contentType(ContentType.JSON)
@@ -110,4 +118,23 @@ public class UserClient {
                 .then();
     }
 
+    public static ValidatableResponse getUserOrders(String accessToken) {
+        return given()
+                .spec(getSpecAuth(accessToken))
+                .contentType(ContentType.JSON)
+                .log().all()
+                .when()
+                .get("/api/orders")
+                .then();
+
+    }
+
+    public static ValidatableResponse getUserOrdersNoToken() {return given()
+            .spec(getSpec())
+            .contentType(ContentType.JSON)
+            .log().all()
+            .when()
+            .get("/api/orders")
+            .then();
+    }
 }

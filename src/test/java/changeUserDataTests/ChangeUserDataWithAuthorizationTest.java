@@ -3,6 +3,7 @@ package changeUserDataTests;
 import clients.UserClient;
 import dataProviders.NormalUserData;
 import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import org.hamcrest.Matchers;
 import org.junit.After;
@@ -16,6 +17,7 @@ public class ChangeUserDataWithAuthorizationTest {
     @Test
     @DisplayName("Изменение данных покупателя")
     @Description("Изменение данных покупателя с авторизацией")
+
     public void AuthorizedUserDataShouldBeChangedTest(){
 
 

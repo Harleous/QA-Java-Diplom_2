@@ -19,7 +19,7 @@ public class AuthorizedUserCreteOrderNoIngredients {
 
     @Test
     @DisplayName("Cоздание заказа")
-    @Description("Создание заказа авторизованным пользователем")
+    @Description("Создание заказа авторизованным пользователем, без ингредиентов")
     public void orderShouldBeCreated() {
         CreateUser createUser = NormalUserData.randomUserData();
         UserClient.create(createUser)

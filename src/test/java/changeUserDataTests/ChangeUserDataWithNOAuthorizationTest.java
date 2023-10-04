@@ -18,7 +18,7 @@ public class ChangeUserDataWithNOAuthorizationTest {
     public static String token;
 
     @Test
-    @DisplayName("Изменение данных неавторизованного покупателя")
+    @DisplayName("Изменение данных  покупателя")
     @Description("Изменение данных покупателя без авторизации")
     public void notAuthorizedUserDataShouldBeChangedTest() {
 

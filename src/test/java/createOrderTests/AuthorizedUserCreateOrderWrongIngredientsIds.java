@@ -23,7 +23,7 @@ public class AuthorizedUserCreateOrderWrongIngredientsIds {
 
     @Test
     @DisplayName("Cоздание заказа")
-    @Description("Создание заказа авторизованным пользователем")
+    @Description("Создание заказа авторизованным пользователем  с неверным хешем ингредиентов")
     public void orderShouldBeCreated() {
         CreateUser createUser = NormalUserData.randomUserData();
         UserClient.create(createUser)

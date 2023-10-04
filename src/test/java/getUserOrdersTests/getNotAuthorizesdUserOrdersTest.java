@@ -9,19 +9,20 @@ import org.junit.After;
 import org.junit.Test;
 import pojoClasses.CreateUser;
 import pojoClasses.Ingredients;
+import pojoClasses.LogOutUser;
 import pojoClasses.LoginUser;
 
 import java.util.List;
 import java.util.Random;
 
-public class getAuthorizesdUserOrdersTest {
-    private String accessToken;
-
+public class getNotAuthorizesdUserOrdersTest {
+    //private String accessToken;
+    private String token;
     @Test
     @DisplayName("Получение заказов пользователя")
-    @Description("Получение заказов авторизованного пользователя")
+    @Description("Получение заказов неавторизованного пользователя")
     public void orderShouldBeCreated() {
-        CreateUser createUser = NormalUserData.randomUserData();
+  /*      CreateUser createUser = NormalUserData.randomUserData();
         UserClient.create(createUser)
                 .log().all()
                 .statusCode(200)
@@ -30,11 +31,13 @@ public class getAuthorizesdUserOrdersTest {
         //Логин
         LoginUser loginUser = LoginUser.fromCreateUserData(createUser);
         accessToken = UserClient.loginUser(loginUser)
+                .extract().jsonPath().get("accessToken");
+
+        token = UserClient.loginUser(loginUser)
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true))
-                .extract().jsonPath().get("accessToken");
-
+                .extract().jsonPath().get("refreshToken");*/
 
         List<String> ids = UserClient.getIngredients().extract().jsonPath().getList("data._id");
 
@@ -61,15 +64,23 @@ public class getAuthorizesdUserOrdersTest {
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true));
 
-        UserClient.getUserOrders(accessToken)
+       /* LogOutUser logOutUser = new LogOutUser(token);
+        UserClient.logOutUser(logOutUser.getToken())
                 .log().all()
                 .statusCode(200)
-                .body("success", Matchers.equalTo(true));
+                .body("message",Matchers.equalTo( "Successful logout"));*/
+
+
+        UserClient.getUserOrdersNoToken()
+                .log().all()
+                .statusCode(401)
+                .body("success", Matchers.equalTo(false))
+                .body("message", Matchers.equalTo( "You should be authorised"));
     }
-    @After
+/*    @After
     public void tearDown () {
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-    }
+    }*/
 }

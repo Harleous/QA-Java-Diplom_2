@@ -13,7 +13,7 @@ public class NotAuthorizedUserCreateOrderWithIngredientsTest {
     private String accessToken;
     @Test
     @DisplayName("Cоздание заказа")
-    @Description("Создание заказа НЕавторизованным пользователем")
+    @Description("Создание заказа НЕавторизованным пользователем, с передачей ингредиентов")
     public void orderShouldBeCreated() {
 
         List<String> ids = UserClient.getIngredients().extract().jsonPath().getList("data._id");

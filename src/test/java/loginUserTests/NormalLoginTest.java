@@ -14,8 +14,8 @@ public class NormalLoginTest {
     private String accessToken;
 
     @Test
-    @DisplayName("Cоздание покупателя")
-    @Description("Нормальное создание покупателя с заполнением всех полей")
+    @DisplayName("Авторизация покупателя")
+    @Description("Авторизация покупателя с заполнением всех полей")
     public void userShouldBeCreatedTest(){
 
 
