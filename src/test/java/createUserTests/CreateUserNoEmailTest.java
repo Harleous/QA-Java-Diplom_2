@@ -12,7 +12,7 @@ import pojoClasses.LoginUser;
 
 public class CreateUserNoEmailTest {
     private String accessToken;
-    private UserClient userClient = new UserClient();
+
     @Test
     @DisplayName("Неправильное создание покупателя")
     @Description("Cоздание покупателя без поля Email")
@@ -21,10 +21,11 @@ public class CreateUserNoEmailTest {
 
 
         CreateUser createUser = NoEmailUser.noEmailUserDataProvider();
-        userClient.create(createUser)
+        UserClient.create(createUser)
                 .log().all()
                 .statusCode(403)
-                .body(/*"success", Matchers.equalTo("false"),*/ "message", Matchers.equalTo("Email, password and name are required fields"));
+                .body("success", Matchers.equalTo(false))
+                .body( "message", Matchers.equalTo("Email, password and name are required fields"));
 
         //Логин
         LoginUser loginUser = LoginUser.fromCreateUserData(createUser);
@@ -41,7 +42,7 @@ public class CreateUserNoEmailTest {
     @After
     public void tearDown() {
         if (accessToken != null) {
-            userClient.delete(accessToken).log().all().statusCode(202);
+            UserClient.delete(accessToken).log().all().statusCode(202);
         }
     }
 }
