@@ -17,9 +17,6 @@ public class ChangeUserDataWithNOAuthorizationTest {
     private String accessToken;
     public static String token;
 
-
-
-
     @Test
     @DisplayName("Изменение данных неавторизованного покупателя")
     @Description("Изменение данных покупателя без авторизации")
@@ -40,9 +37,6 @@ public class ChangeUserDataWithNOAuthorizationTest {
                 .body("success", Matchers.equalTo(true))
                 .extract().jsonPath()
                 .get("refreshToken");
-System.out.println(token);
-
-
 
 LogOutUser logOutUser = new LogOutUser(token);
         UserClient.logOutUser(logOutUser.getToken())
@@ -59,7 +53,13 @@ LogOutUser logOutUser = new LogOutUser(token);
                 .body("message", Matchers.equalTo("You should be authorised"));
 
 
-
+        loginUser.fromCreateUserData(createUser);
+        accessToken = UserClient.loginUser(loginUser)
+                .log().all()
+                .statusCode(200)
+                .body("success", Matchers.equalTo(true))
+                .extract().jsonPath()
+                .get("accessToken");
 
 
 

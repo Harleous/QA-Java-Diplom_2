@@ -12,7 +12,7 @@ import pojoClasses.LoginUser;
 
 public class NormalLoginTest {
     private String accessToken;
-    private UserClient userClient = new UserClient();
+
     @Test
     @DisplayName("Cоздание покупателя")
     @Description("Нормальное создание покупателя с заполнением всех полей")
@@ -21,7 +21,7 @@ public class NormalLoginTest {
 
 
         CreateUser createUser = NormalUserData.randomUserData();
-        userClient.create(createUser)
+        UserClient.create(createUser)
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true));
@@ -42,7 +42,7 @@ public class NormalLoginTest {
     @After
     public void tearDown() {
         if (accessToken != null) {
-            userClient.delete(accessToken).log().all().statusCode(202);
+            UserClient.delete(accessToken).log().all().statusCode(202);
         }
     }
 }

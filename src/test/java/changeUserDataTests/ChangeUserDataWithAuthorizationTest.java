@@ -12,7 +12,7 @@ import pojoClasses.LoginUser;
 
 public class ChangeUserDataWithAuthorizationTest {
     private String accessToken;
-    //private UserClient userClient = new UserClient();
+
     @Test
     @DisplayName("Изменение данных покупателя")
     @Description("Изменение данных покупателя с авторизацией")
@@ -37,10 +37,11 @@ public class ChangeUserDataWithAuthorizationTest {
 
         CreateUser createUser1 = NormalUserData.randomUserData();
 
-                UserClient.changeUserData(accessToken, createUser1)
+         UserClient.changeUserData(accessToken, createUser1)
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true));
+
 
         LoginUser loginUser1 = LoginUser.fromCreateUserData(createUser1);
          UserClient.loginUser(loginUser1)
@@ -54,6 +55,8 @@ public class ChangeUserDataWithAuthorizationTest {
     public void tearDown() {
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
+
+
         }
     }
 }
