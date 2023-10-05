@@ -1,0 +1,114 @@
+{
+  "total" : 11,
+  "items" : [ {
+    "uid" : "7e82432b5b9e08bb3b0f9fc0e9be5a6b",
+    "name" : "changeUserDataTests.ChangeUserDataWithAuthorizationTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "cb8952c30fbe04c52a5816412d42ceef",
+    "name" : "changeUserDataTests.ChangeUserDataWithNOAuthorizationTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "2a51231111ff07e7c162e6336a572575",
+    "name" : "createOrderTests.AuthorizedUserCreateOrderWithIngredientsTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "23523acc7c3d031eb563e9faf72ed2c4",
+    "name" : "createOrderTests.NotAuthorizedUserCreateOrderWithIngredientsTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "d59ec099e631f09eb32f3b4ad4cd5579",
+    "name" : "createUserTests.CreateNormalUserTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "5b23b4ab7b7f06c3948e0e1b667069e5",
+    "name" : "createUserTests.CreateSameUserTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "df6f59c5cd894532549316340bb86d66",
+    "name" : "createUserTests.CreateUserNoEmailTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "125fc3b5615f2ec36b17bcb94692c6c4",
+    "name" : "getUserOrdersTests.getAuthorizesdUserOrdersTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "edd900bd00d5e77730b7f45fc4665e80",
+    "name" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "a83f7be546fcdbbfee0a1daf79862623",
+    "name" : "loginUserTests.NormalLoginTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

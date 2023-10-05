@@ -1,0 +1,192 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "changeUserDataTests.ChangeUserDataWithAuthorizationTest",
+    "children" : [ {
+      "name" : "Изменение данных покупателя",
+      "uid" : "cc1b26600d820b5e",
+      "parentUid" : "7e82432b5b9e08bb3b0f9fc0e9be5a6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493490863,
+        "stop" : 1696493497795,
+        "duration" : 6932
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7e82432b5b9e08bb3b0f9fc0e9be5a6b"
+  }, {
+    "name" : "changeUserDataTests.ChangeUserDataWithNOAuthorizationTest",
+    "children" : [ {
+      "name" : "Изменение данных  покупателя",
+      "uid" : "525fb96ae8a7b07d",
+      "parentUid" : "cb8952c30fbe04c52a5816412d42ceef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493497882,
+        "stop" : 1696493499580,
+        "duration" : 1698
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cb8952c30fbe04c52a5816412d42ceef"
+  }, {
+    "name" : "createOrderTests.AuthorizedUserCreateOrderWithIngredientsTest",
+    "children" : [ {
+      "name" : "Cоздание заказа",
+      "uid" : "16371a026ab4b6f1",
+      "parentUid" : "2a51231111ff07e7c162e6336a572575",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493499585,
+        "stop" : 1696493501027,
+        "duration" : 1442
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2a51231111ff07e7c162e6336a572575"
+  }, {
+    "name" : "createOrderTests.NotAuthorizedUserCreateOrderWithIngredientsTest",
+    "children" : [ {
+      "name" : "Cоздание заказа",
+      "uid" : "f7e4ccb292a9645e",
+      "parentUid" : "23523acc7c3d031eb563e9faf72ed2c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493501030,
+        "stop" : 1696493501357,
+        "duration" : 327
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "23523acc7c3d031eb563e9faf72ed2c4"
+  }, {
+    "name" : "createUserTests.CreateNormalUserTest",
+    "children" : [ {
+      "name" : "Cоздание покупателя",
+      "uid" : "6a4ba1016d50c6e7",
+      "parentUid" : "d59ec099e631f09eb32f3b4ad4cd5579",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493501359,
+        "stop" : 1696493502148,
+        "duration" : 789
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d59ec099e631f09eb32f3b4ad4cd5579"
+  }, {
+    "name" : "createUserTests.CreateSameUserTest",
+    "children" : [ {
+      "name" : "Cоздание покупателя c уже существующими данными",
+      "uid" : "95290029d71798e",
+      "parentUid" : "5b23b4ab7b7f06c3948e0e1b667069e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493502151,
+        "stop" : 1696493503073,
+        "duration" : 922
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5b23b4ab7b7f06c3948e0e1b667069e5"
+  }, {
+    "name" : "createUserTests.CreateUserNoEmailTest",
+    "children" : [ {
+      "name" : "Неправильное создание покупателя",
+      "uid" : "676e0b40aad860cf",
+      "parentUid" : "df6f59c5cd894532549316340bb86d66",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493503084,
+        "stop" : 1696493503509,
+        "duration" : 425
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "df6f59c5cd894532549316340bb86d66"
+  }, {
+    "name" : "getUserOrdersTests.getAuthorizesdUserOrdersTest",
+    "children" : [ {
+      "name" : "Получение заказов пользователя",
+      "uid" : "b58e9ce380c79129",
+      "parentUid" : "125fc3b5615f2ec36b17bcb94692c6c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493503513,
+        "stop" : 1696493505115,
+        "duration" : 1602
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "125fc3b5615f2ec36b17bcb94692c6c4"
+  }, {
+    "name" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest",
+    "children" : [ {
+      "name" : "Получение заказов пользователя",
+      "uid" : "2527830046f1a7e8",
+      "parentUid" : "edd900bd00d5e77730b7f45fc4665e80",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493505125,
+        "stop" : 1696493505893,
+        "duration" : 768
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "edd900bd00d5e77730b7f45fc4665e80"
+  }, {
+    "name" : "loginUserTests.NormalLoginTest",
+    "children" : [ {
+      "name" : "Авторизация покупателя",
+      "uid" : "16a95b37b794b002",
+      "parentUid" : "a83f7be546fcdbbfee0a1daf79862623",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493505895,
+        "stop" : 1696493506635,
+        "duration" : 740
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a83f7be546fcdbbfee0a1daf79862623"
+  }, {
+    "name" : "loginUserTests.NotValidPairEmailPasswordLoginTest",
+    "children" : [ {
+      "name" : "Cоздание покупателя и авторизация с неверным паролем",
+      "uid" : "33a62e673ad17501",
+      "parentUid" : "a76cc9c37eaec0562d595ac34a314a26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1696493506646,
+        "stop" : 1696493507639,
+        "duration" : 993
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a76cc9c37eaec0562d595ac34a314a26"
+  } ]
+}

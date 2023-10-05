@@ -1,0 +1,58 @@
+{
+  "uid" : "2527830046f1a7e8",
+  "name" : "Получение заказов пользователя",
+  "fullName" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest.orderShouldBeCreated",
+  "historyId" : "5b7fc10a743d61673ab339cc0ed78c2e",
+  "time" : {
+    "start" : 1696493505125,
+    "stop" : 1696493505893,
+    "duration" : 768
+  },
+  "description" : "Получение заказов неавторизованного пользователя",
+  "descriptionHtml" : "<p>Получение заказов неавторизованного пользователя</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "getUserOrdersTests"
+  }, {
+    "name" : "testClass",
+    "value" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "orderShouldBeCreated"
+  }, {
+    "name" : "suite",
+    "value" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2527830046f1a7e8.json",
+  "parameterValues" : [ ]
+}

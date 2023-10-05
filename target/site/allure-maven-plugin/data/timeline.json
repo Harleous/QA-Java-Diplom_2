@@ -1,0 +1,156 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-Q61SIO6L",
+    "children" : [ {
+      "name" : "23944@LAPTOP-Q61SIO6L.main(1)",
+      "children" : [ {
+        "name" : "Cоздание покупателя и авторизация с неверным паролем",
+        "uid" : "33a62e673ad17501",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493506646,
+          "stop" : 1696493507639,
+          "duration" : 993
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Cоздание заказа",
+        "uid" : "16371a026ab4b6f1",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493499585,
+          "stop" : 1696493501027,
+          "duration" : 1442
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Cоздание покупателя c уже существующими данными",
+        "uid" : "95290029d71798e",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493502151,
+          "stop" : 1696493503073,
+          "duration" : 922
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Cоздание заказа",
+        "uid" : "f7e4ccb292a9645e",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493501030,
+          "stop" : 1696493501357,
+          "duration" : 327
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Неправильное создание покупателя",
+        "uid" : "676e0b40aad860cf",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493503084,
+          "stop" : 1696493503509,
+          "duration" : 425
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Cоздание покупателя",
+        "uid" : "6a4ba1016d50c6e7",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493501359,
+          "stop" : 1696493502148,
+          "duration" : 789
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Изменение данных  покупателя",
+        "uid" : "525fb96ae8a7b07d",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493497882,
+          "stop" : 1696493499580,
+          "duration" : 1698
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Получение заказов пользователя",
+        "uid" : "b58e9ce380c79129",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493503513,
+          "stop" : 1696493505115,
+          "duration" : 1602
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Изменение данных покупателя",
+        "uid" : "cc1b26600d820b5e",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493490863,
+          "stop" : 1696493497795,
+          "duration" : 6932
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация покупателя",
+        "uid" : "16a95b37b794b002",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493505895,
+          "stop" : 1696493506635,
+          "duration" : 740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Получение заказов пользователя",
+        "uid" : "2527830046f1a7e8",
+        "parentUid" : "9827c41977bb468ae65f36ac7407cbde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1696493505125,
+          "stop" : 1696493505893,
+          "duration" : 768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9827c41977bb468ae65f36ac7407cbde"
+    } ],
+    "uid" : "c1c13f798ccf00a0c8bfaa0bcdd5afe5"
+  } ]
+}

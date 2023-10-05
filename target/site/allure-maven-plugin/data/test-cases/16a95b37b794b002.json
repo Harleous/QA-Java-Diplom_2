@@ -1,0 +1,58 @@
+{
+  "uid" : "16a95b37b794b002",
+  "name" : "Авторизация покупателя",
+  "fullName" : "loginUserTests.NormalLoginTest.userShouldBeCreatedTest",
+  "historyId" : "a889b48840ee71da6df35ce1982a66bf",
+  "time" : {
+    "start" : 1696493505895,
+    "stop" : 1696493506635,
+    "duration" : 740
+  },
+  "description" : "Авторизация покупателя с заполнением всех полей",
+  "descriptionHtml" : "<p>Авторизация покупателя с заполнением всех полей</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "loginUserTests"
+  }, {
+    "name" : "testClass",
+    "value" : "loginUserTests.NormalLoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "userShouldBeCreatedTest"
+  }, {
+    "name" : "suite",
+    "value" : "loginUserTests.NormalLoginTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "16a95b37b794b002.json",
+  "parameterValues" : [ ]
+}
