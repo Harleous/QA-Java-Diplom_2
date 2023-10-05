@@ -1,12 +1,12 @@
 {
-  "uid" : "b58e9ce380c79129",
+  "uid" : "74229ee9341bfc87",
   "name" : "Получение заказов пользователя",
   "fullName" : "getUserOrdersTests.getAuthorizesdUserOrdersTest.orderShouldBeCreated",
   "historyId" : "162609bb5dd02c9c196069231be1714c",
   "time" : {
-    "start" : 1696493503513,
-    "stop" : 1696493505115,
-    "duration" : 1602
+    "start" : 1696494941283,
+    "stop" : 1696494942847,
+    "duration" : 1564
   },
   "description" : "Получение заказов авторизованного пользователя",
   "descriptionHtml" : "<p>Получение заказов авторизованного пользователя</p>\n",
@@ -32,7 +32,7 @@
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b58e9ce380c79129.json",
+  "source" : "74229ee9341bfc87.json",
   "parameterValues" : [ ]
 }

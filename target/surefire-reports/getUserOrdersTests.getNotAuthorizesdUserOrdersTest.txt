@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: getUserOrdersTests.getNotAuthorizesdUserOrdersTest
+Test set: getUserOrdersTests.GetNotAuthorizesdUserOrdersTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.768 s - in getUserOrdersTests.getNotAuthorizesdUserOrdersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.127 s - in getUserOrdersTests.GetNotAuthorizesdUserOrdersTest

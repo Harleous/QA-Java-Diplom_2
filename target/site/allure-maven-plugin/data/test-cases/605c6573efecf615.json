@@ -1,12 +1,12 @@
 {
-  "uid" : "2527830046f1a7e8",
+  "uid" : "605c6573efecf615",
   "name" : "Получение заказов пользователя",
-  "fullName" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest.orderShouldBeCreated",
-  "historyId" : "5b7fc10a743d61673ab339cc0ed78c2e",
+  "fullName" : "getUserOrdersTests.GetNotAuthorizesdUserOrdersTest.orderShouldBeCreated",
+  "historyId" : "d25fd043ccba3ecbfb383f2ceade018d",
   "time" : {
-    "start" : 1696493505125,
-    "stop" : 1696493505893,
-    "duration" : 768
+    "start" : 1696494942850,
+    "stop" : 1696494944978,
+    "duration" : 2128
   },
   "description" : "Получение заказов неавторизованного пользователя",
   "descriptionHtml" : "<p>Получение заказов неавторизованного пользователя</p>\n",
@@ -20,19 +20,19 @@
     "value" : "getUserOrdersTests"
   }, {
     "name" : "testClass",
-    "value" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest"
+    "value" : "getUserOrdersTests.GetNotAuthorizesdUserOrdersTest"
   }, {
     "name" : "testMethod",
     "value" : "orderShouldBeCreated"
   }, {
     "name" : "suite",
-    "value" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest"
+    "value" : "getUserOrdersTests.GetNotAuthorizesdUserOrdersTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2527830046f1a7e8.json",
+  "source" : "605c6573efecf615.json",
   "parameterValues" : [ ]
 }

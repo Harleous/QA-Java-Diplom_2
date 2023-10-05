@@ -1,12 +1,12 @@
 {
-  "uid" : "33a62e673ad17501",
+  "uid" : "c6699a958ab3e571",
   "name" : "Cоздание покупателя и авторизация с неверным паролем",
   "fullName" : "loginUserTests.NotValidPairEmailPasswordLoginTest.UserShouldNotBeAuthorizedTest",
   "historyId" : "4cbff60f34f3bb5f949a3b786282f981",
   "time" : {
-    "start" : 1696493506646,
-    "stop" : 1696493507639,
-    "duration" : 993
+    "start" : 1696494945741,
+    "stop" : 1696494946714,
+    "duration" : 973
   },
   "description" : "Нормальное создание покупателя, но авторизация с другим паролем",
   "descriptionHtml" : "<p>Нормальное создание покупателя, но авторизация с другим паролем</p>\n",
@@ -32,7 +32,7 @@
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "33a62e673ad17501.json",
+  "source" : "c6699a958ab3e571.json",
   "parameterValues" : [ ]
 }

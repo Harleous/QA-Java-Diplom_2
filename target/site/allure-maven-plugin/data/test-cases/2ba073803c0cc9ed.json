@@ -1,12 +1,12 @@
 {
-  "uid" : "676e0b40aad860cf",
+  "uid" : "2ba073803c0cc9ed",
   "name" : "Неправильное создание покупателя",
   "fullName" : "createUserTests.CreateUserNoEmailTest.UserWithNoEmailShouldNotBeCreatedTest",
   "historyId" : "c4539eb4132a4524d769f14b3d79c037",
   "time" : {
-    "start" : 1696493503084,
-    "stop" : 1696493503509,
-    "duration" : 425
+    "start" : 1696494940844,
+    "stop" : 1696494941281,
+    "duration" : 437
   },
   "description" : "Cоздание покупателя без поля Email",
   "descriptionHtml" : "<p>Cоздание покупателя без поля Email</p>\n",
@@ -32,7 +32,7 @@
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "676e0b40aad860cf.json",
+  "source" : "2ba073803c0cc9ed.json",
   "parameterValues" : [ ]
 }

@@ -1,15 +1,15 @@
 {
-  "uid" : "16371a026ab4b6f1",
+  "uid" : "8000914b7a10c7d1",
   "name" : "Cоздание заказа",
-  "fullName" : "createOrderTests.AuthorizedUserCreateOrderWithIngredientsTest.orderShouldBeCreated",
-  "historyId" : "3281f4e230c8358cafac20a4a6697855",
+  "fullName" : "createOrderTests.AuthorizedUserCreateOrderNoIngredientsTest.orderShouldBeCreated",
+  "historyId" : "ad89dac7dab0ad9abc8246fe44e5c6c9",
   "time" : {
-    "start" : 1696493499585,
-    "stop" : 1696493501027,
-    "duration" : 1442
+    "start" : 1696494936520,
+    "stop" : 1696494937605,
+    "duration" : 1085
   },
-  "description" : "Создание заказа авторизованным пользователем, с передачей ингредиентов",
-  "descriptionHtml" : "<p>Создание заказа авторизованным пользователем, с передачей ингредиентов</p>\n",
+  "description" : "Создание заказа авторизованным пользователем, без ингредиентов",
+  "descriptionHtml" : "<p>Создание заказа авторизованным пользователем, без ингредиентов</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
@@ -20,19 +20,19 @@
     "value" : "createOrderTests"
   }, {
     "name" : "testClass",
-    "value" : "createOrderTests.AuthorizedUserCreateOrderWithIngredientsTest"
+    "value" : "createOrderTests.AuthorizedUserCreateOrderNoIngredientsTest"
   }, {
     "name" : "testMethod",
     "value" : "orderShouldBeCreated"
   }, {
     "name" : "suite",
-    "value" : "createOrderTests.AuthorizedUserCreateOrderWithIngredientsTest"
+    "value" : "createOrderTests.AuthorizedUserCreateOrderNoIngredientsTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "16371a026ab4b6f1.json",
+  "source" : "8000914b7a10c7d1.json",
   "parameterValues" : [ ]
 }

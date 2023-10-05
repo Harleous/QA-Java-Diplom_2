@@ -1,5 +1,5 @@
 {
-  "total" : 11,
+  "total" : 12,
   "items" : [ {
     "uid" : "7e82432b5b9e08bb3b0f9fc0e9be5a6b",
     "name" : "changeUserDataTests.ChangeUserDataWithAuthorizationTest",
@@ -14,6 +14,17 @@
   }, {
     "uid" : "cb8952c30fbe04c52a5816412d42ceef",
     "name" : "changeUserDataTests.ChangeUserDataWithNOAuthorizationTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "dc49fdbdcb755578292b5c5705f53ff5",
+    "name" : "createOrderTests.AuthorizedUserCreateOrderNoIngredientsTest",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -89,19 +100,8 @@
       "total" : 1
     }
   }, {
-    "uid" : "edd900bd00d5e77730b7f45fc4665e80",
-    "name" : "getUserOrdersTests.getNotAuthorizesdUserOrdersTest",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "a83f7be546fcdbbfee0a1daf79862623",
-    "name" : "loginUserTests.NormalLoginTest",
+    "uid" : "eeb436b67988983978f3f04417761251",
+    "name" : "getUserOrdersTests.GetNotAuthorizesdUserOrdersTest",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

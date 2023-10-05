@@ -1,15 +1,15 @@
 {
-  "uid" : "16a95b37b794b002",
-  "name" : "Авторизация покупателя",
-  "fullName" : "loginUserTests.NormalLoginTest.userShouldBeCreatedTest",
-  "historyId" : "a889b48840ee71da6df35ce1982a66bf",
+  "uid" : "b6954ae0cd764a53",
+  "name" : "Cоздание покупателя",
+  "fullName" : "createUserTests.CreateNormalUserTest.userShouldBeCreatedTest",
+  "historyId" : "160e5812ba32499509cbd8ef166db7b2",
   "time" : {
-    "start" : 1696493505895,
-    "stop" : 1696493506635,
-    "duration" : 740
+    "start" : 1696494939180,
+    "stop" : 1696494939923,
+    "duration" : 743
   },
-  "description" : "Авторизация покупателя с заполнением всех полей",
-  "descriptionHtml" : "<p>Авторизация покупателя с заполнением всех полей</p>\n",
+  "description" : "Нормальное создание покупателя с заполнением всех полей",
+  "descriptionHtml" : "<p>Нормальное создание покупателя с заполнением всех полей</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
@@ -17,22 +17,22 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "loginUserTests"
+    "value" : "createUserTests"
   }, {
     "name" : "testClass",
-    "value" : "loginUserTests.NormalLoginTest"
+    "value" : "createUserTests.CreateNormalUserTest"
   }, {
     "name" : "testMethod",
     "value" : "userShouldBeCreatedTest"
   }, {
     "name" : "suite",
-    "value" : "loginUserTests.NormalLoginTest"
+    "value" : "createUserTests.CreateNormalUserTest"
   }, {
     "name" : "host",
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "16a95b37b794b002.json",
+  "source" : "b6954ae0cd764a53.json",
   "parameterValues" : [ ]
 }

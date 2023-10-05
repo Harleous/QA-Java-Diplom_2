@@ -1,12 +1,12 @@
 {
-  "uid" : "525fb96ae8a7b07d",
+  "uid" : "d9e019d2e8d6e406",
   "name" : "Изменение данных  покупателя",
   "fullName" : "changeUserDataTests.ChangeUserDataWithNOAuthorizationTest.notAuthorizedUserDataShouldBeChangedTest",
   "historyId" : "60e581e5306277bdf8e05053fc0b22b0",
   "time" : {
-    "start" : 1696493497882,
-    "stop" : 1696493499580,
-    "duration" : 1698
+    "start" : 1696494934775,
+    "stop" : 1696494936507,
+    "duration" : 1732
   },
   "description" : "Изменение данных покупателя без авторизации",
   "descriptionHtml" : "<p>Изменение данных покупателя без авторизации</p>\n",
@@ -32,7 +32,7 @@
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "525fb96ae8a7b07d.json",
+  "source" : "d9e019d2e8d6e406.json",
   "parameterValues" : [ ]
 }

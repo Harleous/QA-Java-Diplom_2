@@ -1,12 +1,12 @@
 {
-  "uid" : "95290029d71798e",
+  "uid" : "26dfb5db82bea55b",
   "name" : "Cоздание покупателя c уже существующими данными",
   "fullName" : "createUserTests.CreateSameUserTest.SameUserShouldNotBeCreatedTest",
   "historyId" : "5b07378d43a264753ee25edc3fac04d3",
   "time" : {
-    "start" : 1696493502151,
-    "stop" : 1696493503073,
-    "duration" : 922
+    "start" : 1696494939927,
+    "stop" : 1696494940841,
+    "duration" : 914
   },
   "description" : "Создание покупателя с данными, зарегистрированными в базе данных",
   "descriptionHtml" : "<p>Создание покупателя с данными, зарегистрированными в базе данных</p>\n",
@@ -32,7 +32,7 @@
     "value" : "LAPTOP-Q61SIO6L"
   }, {
     "name" : "thread",
-    "value" : "23944@LAPTOP-Q61SIO6L.main(1)"
+    "value" : "19740@LAPTOP-Q61SIO6L.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "95290029d71798e.json",
+  "source" : "26dfb5db82bea55b.json",
   "parameterValues" : [ ]
 }
