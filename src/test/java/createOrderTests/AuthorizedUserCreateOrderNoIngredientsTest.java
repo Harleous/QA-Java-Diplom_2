@@ -12,9 +12,9 @@ import pojoClasses.Ingredients;
 import pojoClasses.LoginUser;
 
 import java.util.List;
-import java.util.Random;
 
-public class AuthorizedUserCreteOrderNoIngredients {
+
+public class AuthorizedUserCreateOrderNoIngredientsTest {
     private String accessToken;
 
     @Test
@@ -36,10 +36,7 @@ public class AuthorizedUserCreteOrderNoIngredients {
                 .extract().jsonPath().get("accessToken");
 
 
-        /*List<String> ids = UserClient.getIngredients().extract().jsonPath().getList("data._id");
 
-        int randomIngredientId1 = new Random().nextInt(ids.size());
-        int randomIngredientId2 = new Random().nextInt(ids.size());*/
         List<String> ingredientsForOrder = List.of(new String[]{});
 
 

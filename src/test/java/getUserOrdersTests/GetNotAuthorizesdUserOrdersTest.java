@@ -15,14 +15,14 @@ import pojoClasses.LoginUser;
 import java.util.List;
 import java.util.Random;
 
-public class getNotAuthorizesdUserOrdersTest {
-    //private String accessToken;
+public class GetNotAuthorizesdUserOrdersTest {
+    private String accessToken;
     private String token;
     @Test
     @DisplayName("Получение заказов пользователя")
     @Description("Получение заказов неавторизованного пользователя")
     public void orderShouldBeCreated() {
-  /*      CreateUser createUser = NormalUserData.randomUserData();
+        CreateUser createUser = NormalUserData.randomUserData();
         UserClient.create(createUser)
                 .log().all()
                 .statusCode(200)
@@ -37,7 +37,7 @@ public class getNotAuthorizesdUserOrdersTest {
                 .log().all()
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true))
-                .extract().jsonPath().get("refreshToken");*/
+                .extract().jsonPath().get("refreshToken");
 
         List<String> ids = UserClient.getIngredients().extract().jsonPath().getList("data._id");
 
@@ -64,11 +64,11 @@ public class getNotAuthorizesdUserOrdersTest {
                 .statusCode(200)
                 .body("success", Matchers.equalTo(true));
 
-       /* LogOutUser logOutUser = new LogOutUser(token);
+        LogOutUser logOutUser = new LogOutUser(token);
         UserClient.logOutUser(logOutUser.getToken())
                 .log().all()
                 .statusCode(200)
-                .body("message",Matchers.equalTo( "Successful logout"));*/
+                .body("message",Matchers.equalTo( "Successful logout"));
 
 
         UserClient.getUserOrdersNoToken()
@@ -77,10 +77,10 @@ public class getNotAuthorizesdUserOrdersTest {
                 .body("success", Matchers.equalTo(false))
                 .body("message", Matchers.equalTo( "You should be authorised"));
     }
-/*    @After
+    @After
     public void tearDown () {
         if (accessToken != null) {
             UserClient.delete(accessToken).log().all().statusCode(202);
         }
-    }*/
+    }
 }
