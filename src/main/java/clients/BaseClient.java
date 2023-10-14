@@ -1,38 +1,27 @@
 package clients;
 
-
-
-
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
-import org.json.JSONObject;
 
-
-import pojoClasses.LogOutUser;
-
-import java.util.List;
+import static clients.BaseConstants.BASE_URI;
 
 public class BaseClient {
-
-
-
-
-    protected static RequestSpecification getSpec(){
+    protected static RequestSpecification getSpec() {
         return new RequestSpecBuilder()
                 .log(LogDetail.ALL)
                 .setContentType(ContentType.JSON)
-                .setBaseUri("https://stellarburgers.nomoreparties.site")
+                .setBaseUri(BASE_URI)
                 .build();
     }
-    protected static RequestSpecification getSpecAuth(String accessToken){
+
+    protected static RequestSpecification getSpecAuth(String accessToken) {
         return new RequestSpecBuilder()
                 .log(LogDetail.ALL)
                 .addHeader("Authorization", accessToken)
                 .setContentType(ContentType.JSON)
-                .setBaseUri("https://stellarburgers.nomoreparties.site")
+                .setBaseUri(BASE_URI)
                 .build();
     }
-
 }
