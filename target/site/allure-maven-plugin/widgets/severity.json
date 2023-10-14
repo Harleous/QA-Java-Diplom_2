@@ -1,0 +1,121 @@
+[ {
+  "uid" : "45109b86b45206e9",
+  "name" : "Cоздание покупателя и авторизация с неверным паролем",
+  "time" : {
+    "start" : 1697304057594,
+    "stop" : 1697304058553,
+    "duration" : 959
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88e30ef58ca22921",
+  "name" : "Cоздание заказа",
+  "time" : {
+    "start" : 1697304050261,
+    "stop" : 1697304051394,
+    "duration" : 1133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c2830d7a59a7741",
+  "name" : "Изменение данных покупателя",
+  "time" : {
+    "start" : 1697304040529,
+    "stop" : 1697304047620,
+    "duration" : 7091
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3dd9e6d29d2122b4",
+  "name" : "Неправильное создание покупателя",
+  "time" : {
+    "start" : 1697304052956,
+    "stop" : 1697304053136,
+    "duration" : 180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ddf2bfe3370a882",
+  "name" : "Cоздание покупателя",
+  "time" : {
+    "start" : 1697304051771,
+    "stop" : 1697304052008,
+    "duration" : 237
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c90f083369f345e3",
+  "name" : "Cоздание заказа",
+  "time" : {
+    "start" : 1697304051407,
+    "stop" : 1697304051760,
+    "duration" : 353
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "39d41a93de985667",
+  "name" : "Cоздание покупателя c уже существующими данными",
+  "time" : {
+    "start" : 1697304052019,
+    "stop" : 1697304052953,
+    "duration" : 934
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29070efe816aed1d",
+  "name" : "Получение заказов пользователя",
+  "time" : {
+    "start" : 1697304053139,
+    "stop" : 1697304054750,
+    "duration" : 1611
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dfdfb47abf43e65",
+  "name" : "Получение заказов пользователя",
+  "time" : {
+    "start" : 1697304054753,
+    "stop" : 1697304056830,
+    "duration" : 2077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e4de7fe7c21ef94",
+  "name" : "Изменение данных  покупателя",
+  "time" : {
+    "start" : 1697304047724,
+    "stop" : 1697304049248,
+    "duration" : 1524
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61661aa9d6e369a7",
+  "name" : "Cоздание заказа",
+  "time" : {
+    "start" : 1697304049259,
+    "stop" : 1697304050249,
+    "duration" : 990
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86a75254075136fd",
+  "name" : "Авторизация покупателя",
+  "time" : {
+    "start" : 1697304056842,
+    "stop" : 1697304057592,
+    "duration" : 750
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

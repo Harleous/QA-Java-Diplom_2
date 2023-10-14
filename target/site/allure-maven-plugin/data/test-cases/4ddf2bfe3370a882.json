@@ -1,0 +1,87 @@
+{
+  "uid" : "4ddf2bfe3370a882",
+  "name" : "Cоздание покупателя",
+  "fullName" : "create.user.CreateNormalUserTest.userShouldBeCreatedTest",
+  "historyId" : "376a6702c718f7e0216037109f513dee",
+  "time" : {
+    "start" : 1697304051771,
+    "stop" : 1697304052008,
+    "duration" : 237
+  },
+  "description" : "Нормальное создание покупателя с заполнением всех полей",
+  "descriptionHtml" : "<p>Нормальное создание покупателя с заполнением всех полей</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Нормальное создание покупателя с заполнением всех полей",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1697304051771,
+        "stop" : 1697304051986,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createUser",
+        "value" : "pojo.classes.CreateUser@7a925ac4"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "create.user"
+  }, {
+    "name" : "testClass",
+    "value" : "create.user.CreateNormalUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "userShouldBeCreatedTest"
+  }, {
+    "name" : "suite",
+    "value" : "create.user.CreateNormalUserTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "25856@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4ddf2bfe3370a882.json",
+  "parameterValues" : [ ]
+}
