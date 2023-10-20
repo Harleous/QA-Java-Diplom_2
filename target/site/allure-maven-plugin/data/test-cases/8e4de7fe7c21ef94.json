@@ -1,0 +1,177 @@
+{
+  "uid" : "8e4de7fe7c21ef94",
+  "name" : "Изменение данных  покупателя",
+  "fullName" : "change.userdata.ChangeUserDataWithNOAuthorizationTest.notAuthorizedUserDataShouldBeChangedTest",
+  "historyId" : "d2696694c689f1bec64003516770c979",
+  "time" : {
+    "start" : 1697304047724,
+    "stop" : 1697304049248,
+    "duration" : 1524
+  },
+  "description" : "Изменение данных покупателя без авторизации",
+  "descriptionHtml" : "<p>Изменение данных покупателя без авторизации</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Изменение данных покупателя без авторизации",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1697304047724,
+        "stop" : 1697304047952,
+        "duration" : 228
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createUser",
+        "value" : "pojo.classes.CreateUser@69c335c4"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Логин пользователя",
+      "time" : {
+        "start" : 1697304047953,
+        "stop" : 1697304048181,
+        "duration" : 228
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "loginUser",
+        "value" : "pojo.classes.LoginUser@72e4ffa2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Логаут пользователя",
+      "time" : {
+        "start" : 1697304048198,
+        "stop" : 1697304048519,
+        "duration" : 321
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "4daf46ae99d6ee73f05ada3e527d3e058569b41adacc5118374e830e6558a4e6bf58873b0d8f5aa7"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Изменение данных пользователся без авторизации",
+      "time" : {
+        "start" : 1697304048519,
+        "stop" : 1697304048669,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createUser1",
+        "value" : "pojo.classes.CreateUser@6037748a"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Логин пользователя",
+      "time" : {
+        "start" : 1697304048669,
+        "stop" : 1697304048905,
+        "duration" : 236
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "loginUser",
+        "value" : "pojo.classes.LoginUser@72e4ffa2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1697304048939,
+        "stop" : 1697304049247,
+        "duration" : 308
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MmFjZGVmOWVkMjgwMDAxYjM3MTA3MyIsImlhdCI6MTY5NzMwNDA0OCwiZXhwIjoxNjk3MzA1MjQ4fQ.0QoiR_4MreG3XCY0nJ3wYbuxOeaKwV51K7AmDy5jVl8"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "change.userdata"
+  }, {
+    "name" : "testClass",
+    "value" : "change.userdata.ChangeUserDataWithNOAuthorizationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "notAuthorizedUserDataShouldBeChangedTest"
+  }, {
+    "name" : "suite",
+    "value" : "change.userdata.ChangeUserDataWithNOAuthorizationTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "25856@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8e4de7fe7c21ef94.json",
+  "parameterValues" : [ ]
+}

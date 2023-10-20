@@ -1,0 +1,102 @@
+{
+  "uid" : "c90f083369f345e3",
+  "name" : "Cоздание заказа",
+  "fullName" : "create.order.NotAuthorizedUserCreateOrderWithIngredientsTest.orderShouldBeCreated",
+  "historyId" : "f1584099e30738b1252e58c609c5c82a",
+  "time" : {
+    "start" : 1697304051407,
+    "stop" : 1697304051760,
+    "duration" : 353
+  },
+  "description" : "Создание заказа НЕавторизованным пользователем, с передачей ингредиентов",
+  "descriptionHtml" : "<p>Создание заказа НЕавторизованным пользователем, с передачей ингредиентов</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Создание заказа НЕавторизованным пользователем, с передачей ингредиентов",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Получение списка ингредиентов",
+      "time" : {
+        "start" : 1697304051407,
+        "stop" : 1697304051562,
+        "duration" : 155
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Создание заказа",
+      "time" : {
+        "start" : 1697304051588,
+        "stop" : 1697304051746,
+        "duration" : 158
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ingredients",
+        "value" : "[61c0c5a71d1f82001bdaaa77, 61c0c5a71d1f82001bdaaa70]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "create.order"
+  }, {
+    "name" : "testClass",
+    "value" : "create.order.NotAuthorizedUserCreateOrderWithIngredientsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "orderShouldBeCreated"
+  }, {
+    "name" : "suite",
+    "value" : "create.order.NotAuthorizedUserCreateOrderWithIngredientsTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "25856@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c90f083369f345e3.json",
+  "parameterValues" : [ ]
+}

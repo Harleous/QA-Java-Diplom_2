@@ -1,0 +1,141 @@
+{
+  "uid" : "61661aa9d6e369a7",
+  "name" : "Cоздание заказа",
+  "fullName" : "create.order.AuthorizedUserCreateOrderNoIngredientsTest.orderShouldBeCreated",
+  "historyId" : "900ad18079b758b5d1d19e15ebb73dfc",
+  "time" : {
+    "start" : 1697304049259,
+    "stop" : 1697304050249,
+    "duration" : 990
+  },
+  "description" : "Создание заказа авторизованным пользователем, без ингредиентов",
+  "descriptionHtml" : "<p>Создание заказа авторизованным пользователем, без ингредиентов</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Создание заказа авторизованным пользователем, без ингредиентов",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1697304049260,
+        "stop" : 1697304049481,
+        "duration" : 221
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "createUser",
+        "value" : "pojo.classes.CreateUser@2f403d0a"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Логин пользователя",
+      "time" : {
+        "start" : 1697304049481,
+        "stop" : 1697304049696,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "loginUser",
+        "value" : "pojo.classes.LoginUser@38276668"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Создание заказа",
+      "time" : {
+        "start" : 1697304049710,
+        "stop" : 1697304049913,
+        "duration" : 203
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ingredients",
+        "value" : "[]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1697304049951,
+        "stop" : 1697304050248,
+        "duration" : 297
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MmFjZGYxOWVkMjgwMDAxYjM3MTA3NyIsImlhdCI6MTY5NzMwNDA0OSwiZXhwIjoxNjk3MzA1MjQ5fQ.UftqDY7Hy0XDxahO3neFMO4wvzl76udduaCjXi1OMyE"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "create.order"
+  }, {
+    "name" : "testClass",
+    "value" : "create.order.AuthorizedUserCreateOrderNoIngredientsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "orderShouldBeCreated"
+  }, {
+    "name" : "suite",
+    "value" : "create.order.AuthorizedUserCreateOrderNoIngredientsTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-Q61SIO6L"
+  }, {
+    "name" : "thread",
+    "value" : "25856@LAPTOP-Q61SIO6L.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "61661aa9d6e369a7.json",
+  "parameterValues" : [ ]
+}

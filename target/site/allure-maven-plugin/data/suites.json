@@ -1,0 +1,209 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "change.userdata.ChangeUserDataWithAuthorizationTest",
+    "children" : [ {
+      "name" : "Изменение данных покупателя",
+      "uid" : "9c2830d7a59a7741",
+      "parentUid" : "fab033503035440f569a723ac55608ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304040529,
+        "stop" : 1697304047620,
+        "duration" : 7091
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fab033503035440f569a723ac55608ec"
+  }, {
+    "name" : "change.userdata.ChangeUserDataWithNOAuthorizationTest",
+    "children" : [ {
+      "name" : "Изменение данных  покупателя",
+      "uid" : "8e4de7fe7c21ef94",
+      "parentUid" : "475c4a62beafc029749fa0fd1fcdd213",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304047724,
+        "stop" : 1697304049248,
+        "duration" : 1524
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "475c4a62beafc029749fa0fd1fcdd213"
+  }, {
+    "name" : "create.order.AuthorizedUserCreateOrderNoIngredientsTest",
+    "children" : [ {
+      "name" : "Cоздание заказа",
+      "uid" : "61661aa9d6e369a7",
+      "parentUid" : "c5890b9534377244e8204fbc81a88b67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304049259,
+        "stop" : 1697304050249,
+        "duration" : 990
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c5890b9534377244e8204fbc81a88b67"
+  }, {
+    "name" : "create.order.AuthorizedUserCreateOrderWithIngredientsTest",
+    "children" : [ {
+      "name" : "Cоздание заказа",
+      "uid" : "88e30ef58ca22921",
+      "parentUid" : "96a788d2905add619563100d715575eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304050261,
+        "stop" : 1697304051394,
+        "duration" : 1133
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "96a788d2905add619563100d715575eb"
+  }, {
+    "name" : "create.order.NotAuthorizedUserCreateOrderWithIngredientsTest",
+    "children" : [ {
+      "name" : "Cоздание заказа",
+      "uid" : "c90f083369f345e3",
+      "parentUid" : "cfc86653ec4d14abca40503d24880131",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304051407,
+        "stop" : 1697304051760,
+        "duration" : 353
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cfc86653ec4d14abca40503d24880131"
+  }, {
+    "name" : "create.user.CreateNormalUserTest",
+    "children" : [ {
+      "name" : "Cоздание покупателя",
+      "uid" : "4ddf2bfe3370a882",
+      "parentUid" : "00d9c54ce8aa4af1b304ed7bfe1c7c5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304051771,
+        "stop" : 1697304052008,
+        "duration" : 237
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "00d9c54ce8aa4af1b304ed7bfe1c7c5c"
+  }, {
+    "name" : "create.user.CreateSameUserTest",
+    "children" : [ {
+      "name" : "Cоздание покупателя c уже существующими данными",
+      "uid" : "39d41a93de985667",
+      "parentUid" : "1ebf7841525c933510af45cd9be06155",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304052019,
+        "stop" : 1697304052953,
+        "duration" : 934
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1ebf7841525c933510af45cd9be06155"
+  }, {
+    "name" : "create.user.CreateUserNoEmailTest",
+    "children" : [ {
+      "name" : "Неправильное создание покупателя",
+      "uid" : "3dd9e6d29d2122b4",
+      "parentUid" : "49eb7dd9660817eebd16c3ccb28bdfb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304052956,
+        "stop" : 1697304053136,
+        "duration" : 180
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "49eb7dd9660817eebd16c3ccb28bdfb8"
+  }, {
+    "name" : "get.user.orders.getAuthorizesdUserOrdersTest",
+    "children" : [ {
+      "name" : "Получение заказов пользователя",
+      "uid" : "29070efe816aed1d",
+      "parentUid" : "6fbb9e1787efb1174fc2d64592361920",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304053139,
+        "stop" : 1697304054750,
+        "duration" : 1611
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6fbb9e1787efb1174fc2d64592361920"
+  }, {
+    "name" : "get.user.orders.GetNotAuthorizesdUserOrdersTest",
+    "children" : [ {
+      "name" : "Получение заказов пользователя",
+      "uid" : "dfdfb47abf43e65",
+      "parentUid" : "0779fb8c3068d5fc77bc23e26ec8da8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304054753,
+        "stop" : 1697304056830,
+        "duration" : 2077
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0779fb8c3068d5fc77bc23e26ec8da8f"
+  }, {
+    "name" : "login.user.NormalLoginTest",
+    "children" : [ {
+      "name" : "Авторизация покупателя",
+      "uid" : "86a75254075136fd",
+      "parentUid" : "0bcec4ace460c4b0dcaa07179af13847",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304056842,
+        "stop" : 1697304057592,
+        "duration" : 750
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0bcec4ace460c4b0dcaa07179af13847"
+  }, {
+    "name" : "login.user.NotValidPairEmailPasswordLoginTest",
+    "children" : [ {
+      "name" : "Cоздание покупателя и авторизация с неверным паролем",
+      "uid" : "45109b86b45206e9",
+      "parentUid" : "148bed803a415452df5193f1f265ef79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1697304057594,
+        "stop" : 1697304058553,
+        "duration" : 959
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "148bed803a415452df5193f1f265ef79"
+  } ]
+}
